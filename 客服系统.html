@@ -16,6 +16,7 @@
 <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
 <!--<script type="text/javascript" src="js/bootstrap/npm.js"></script>-->
 <script type="text/javascript" src="js/CustomerServiceSystem.js"></script>
+<script type="text/javascript" src="js/kf.js"></script>
 </head>
 <body>
 <div class="ServiceSystem_tan">
@@ -98,130 +99,134 @@
 					<!-- end-->
                 </div>
                 <div class="clear"></div>
-                <!---->
-                <div class="Meun">
-                	<p class="blank6"></p>
-                	<ul class="Meunul">
-                    	<li class="Meunli"><a href="#">今日接待</a></li>
-                        <li class="Meunli check"><a href="#">全部会话</a></li>
-                    </ul>
-                    <p class="blank6"></p>
-                </div>
-                <!-- end-->
-                <div class="clear"></div>
-                <!---->
-				<div class="box2">
-                	<input type="button" class="bodybtn btn1" value="选择" />
-                    <div class="divsoso">
-                    	<input type="button" class="bodybtn sobtn1" value="" />
-                    	<input type="text" class="bodytxt sotxt1" placeholder="输入用户名查找" />
+                <!--overhidden-->
+                <div class="ServiceSystem_Lover">
+                    <!---->
+                    <div class="Meun">
+                        <p class="blank6"></p>
+                        <ul class="Meunul">
+                            <li class="Meunli"><a href="#">今日接待</a></li>
+                            <li class="Meunli"><a href="#">全部会话</a></li>
+                        </ul>
+                        <p class="blank6"></p>
                     </div>
-                </div>
-                <!-- end-->
-                <ul class="Cententul">
-                	<li class="Entli Xuan">
-                    	<!--单个会话-->
-                    	<div class="div01">
-                        	<!---->
-                        	<div class="P1">
-                            	<span class="SelectAll float_l"><input name=" " type="checkbox" value=" " class="checkedclass">全选</span>
-                                <span class="Transfer float_l">
-                                	<a href="#" class="check">转移</a>
-                                    <a href="#">取消</a>
-                                </span>
-                            </div>	
-                            <!-- end-->
-                            <div class="clear"></div>
-                            <p class="Title"><i class="Lico"></i>收藏会话</p>
-                            <ul class="Informationul">
-                            	<li class="allli">
-                                	<span class="SelectAll2 float_l"><input name=" " type="checkbox" value=" " class="checkedclass"></span>
-                                	<span class="pic"><img src="images/Informationul_allli_pic01.jpg" width="100%" /></span>
-                                    <span class="bt">九月</span>
-                                    <span>下午5点前下单，今天...</span>
-                                    <span class="Rspan">
-                                    	<span class="span1">15：43</span>
-                                        <!--<span class="Num float_r">3</span>-->
-                                    </span>
-                                </li>
-                            </ul>
+                    <!-- end-->
+                    <div class="clear"></div>
+                    <!---->
+                    <div class="box2">
+                        <input type="button" class="bodybtn btn1" value="选择" />
+                        <div class="divsoso">
+                            <input type="button" class="bodybtn sobtn1" value="" />
+                            <input type="text" class="bodytxt sotxt1" placeholder="输入用户名查找" />
                         </div>
-                        <!--单个会话 end-->
-                        <p class="Title"><i class="Lico Licobg1"></i>全部会话</p>
-                        <div class="div01">
-                            <ul class="Informationul">
-                            	<li class="allli">
-                                	<span class="SelectAll2 float_l"><input name=" " type="checkbox" value=" " class="checkedclass"></span>
-                                	<span class="pic"><img src="images/Informationul_allli_pic01.jpg" width="100%" /></span>
-                                    <span class="bt">九月</span>
-                                    <span>下午5点前下单，今天...</span>
-                                    <span class="Rspan">
-                                    	<span class="span1">15：43</span>
-                                        <!--<span class="Num float_r">3</span>-->
+                    </div>
+                    <!-- end-->
+                    <ul class="Cententul">
+                        <li class="Entli">
+                            <div class="div01">
+                                <p class="Replies"><span class="paddl13">已回复</span></p>
+                                <ul class="Informationul">
+                                    <li class="allli">
+                                        <span class="pic"><img src="images/Informationul_allli_pic01.jpg" width="100%" /></span>
+                                        <span class="bt">九月</span>
+                                        <span>下午5点前下单，今天...</span>
+                                        <span class="Rspan">
+                                            <span class="span1">15：43</span>
+                                            <!--<span class="Num float_r">3</span>-->
+                                        </span>
+                                    </li>
+                                    <li class="allli">
+                                        <span class="pic"><img src="images/Informationul_allli_pic02.jpg" width="100%" /></span>
+                                        <span class="bt">Chris</span>
+                                        <span>下午5点前下单，今天...</span>
+                                        <span class="Rspan">
+                                            <span class="span1">15：43</span>
+                                            <span class="Num float_r">3</span>
+                                        </span>
+                                    </li>
+                                    <li class="allli">
+                                        <span class="pic"><img src="images/Informationul_allli_pic03.jpg" width="100%" /></span>
+                                        <span class="bt">XDdan</span>
+                                        <span>下午5点前下单，今天...</span>
+                                        <span class="Rspan">
+                                            <span class="span1">15：43</span>
+                                            <!--<span class="Num float_r">3</span>-->
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="clear blank4"></div>
+                                <a href="#" class="LoadMore">加载更多&gt;&gt;</a>
+                            </div>
+                        </li>
+                        <li class="Entli EntliX">
+                            <!--单个会话-->
+                            <div class="div01">
+                                <!---->
+                                <div class="P1">
+                                    <span class="SelectAll float_l"><input name=" " type="checkbox" value=" " class="checkedclass">全选</span>
+                                    <span class="Transfer float_l">
+                                        <a href="#" class="check">转移</a>
+                                        <a href="#">取消</a>
                                     </span>
-                                </li>
-                                <li class="allli">
-                                	<span class="SelectAll2 float_l"><input name=" " type="checkbox" value=" " class="checkedclass"></span>
-                                	<span class="pic"><img src="images/Informationul_allli_pic02.jpg" width="100%" /></span>
-                                    <span class="bt">Chris</span>
-                                    <span>下午5点前下单，今天...</span>
-                                    <span class="Rspan">
-                                    	<span class="span1">15：43</span>
-                                        <span class="Num float_r">3</span>
-                                    </span>
-                                </li>
-                                <li class="allli">
-                                	<span class="SelectAll2 float_l"><input name=" " type="checkbox" value=" " class="checkedclass"></span>
-                                	<span class="pic"><img src="images/Informationul_allli_pic03.jpg" width="100%" /></span>
-                                    <span class="bt">XDdan</span>
-                                    <span>下午5点前下单，今天...</span>
-                                    <span class="Rspan">
-                                    	<span class="span1">15：43</span>
-                                        <!--<span class="Num float_r">3</span>-->
-                                    </span>
-                                </li>
-                            </ul>
-                            <div class="clear blank4"></div>
-                            <a href="#" class="LoadMore">加载更多&gt;&gt;</a>
-                        </div>
-                    </li>
-                    <li class="Entli">
-                    	<div class="div01">
-                        	<p class="Replies"><span class="paddl13">已回复</span></p>
-                            <ul class="Informationul">
-                            	<li class="allli">
-                                	<span class="pic"><img src="images/Informationul_allli_pic01.jpg" width="100%" /></span>
-                                    <span class="bt">九月</span>
-                                    <span>下午5点前下单，今天...</span>
-                                    <span class="Rspan">
-                                    	<span class="span1">15：43</span>
-                                        <!--<span class="Num float_r">3</span>-->
-                                    </span>
-                                </li>
-                                <li class="allli">
-                                	<span class="pic"><img src="images/Informationul_allli_pic02.jpg" width="100%" /></span>
-                                    <span class="bt">Chris</span>
-                                    <span>下午5点前下单，今天...</span>
-                                    <span class="Rspan">
-                                    	<span class="span1">15：43</span>
-                                        <span class="Num float_r">3</span>
-                                    </span>
-                                </li>
-                                <li class="allli">
-                                	<span class="pic"><img src="images/Informationul_allli_pic03.jpg" width="100%" /></span>
-                                    <span class="bt">XDdan</span>
-                                    <span>下午5点前下单，今天...</span>
-                                    <span class="Rspan">
-                                    	<span class="span1">15：43</span>
-                                        <!--<span class="Num float_r">3</span>-->
-                                    </span>
-                                </li>
-                            </ul>
-                            <div class="clear blank4"></div>
-                            <a href="#" class="LoadMore">加载更多&gt;&gt;</a>
-                        </div>
-                    </li>
-                </ul>                
+                                </div>	
+                                <!-- end-->
+                                <div class="clear"></div>
+                                <p class="Title"><i class="Lico"></i>收藏会话</p>
+                                <ul class="Informationul">
+                                    <li class="allli">
+                                        <span class="SelectAll2 float_l"><input name=" " type="checkbox" value=" " class="checkedclass"></span>
+                                        <span class="pic"><img src="images/Informationul_allli_pic01.jpg" width="100%" /></span>
+                                        <span class="bt">九月</span>
+                                        <span>下午5点前下单，今天...</span>
+                                        <span class="Rspan">
+                                            <span class="span1">15：43</span>
+                                            <!--<span class="Num float_r">3</span>-->
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--单个会话 end-->
+                            <p class="Title"><i class="Lico Licobg1"></i>全部会话</p>
+                            <div class="div01">
+                                <ul class="Informationul">
+                                    <li class="allli">
+                                        <span class="SelectAll2 float_l"><input name=" " type="checkbox" value=" " class="checkedclass"></span>
+                                        <span class="pic"><img src="images/Informationul_allli_pic01.jpg" width="100%" /></span>
+                                        <span class="bt">九月</span>
+                                        <span>下午5点前下单，今天...</span>
+                                        <span class="Rspan">
+                                            <span class="span1">15：43</span>
+                                            <!--<span class="Num float_r">3</span>-->
+                                        </span>
+                                    </li>
+                                    <li class="allli">
+                                        <span class="SelectAll2 float_l"><input name=" " type="checkbox" value=" " class="checkedclass"></span>
+                                        <span class="pic"><img src="images/Informationul_allli_pic02.jpg" width="100%" /></span>
+                                        <span class="bt">Chris</span>
+                                        <span>下午5点前下单，今天...</span>
+                                        <span class="Rspan">
+                                            <span class="span1">15：43</span>
+                                            <span class="Num float_r">3</span>
+                                        </span>
+                                    </li>
+                                    <li class="allli">
+                                        <span class="SelectAll2 float_l"><input name=" " type="checkbox" value=" " class="checkedclass"></span>
+                                        <span class="pic"><img src="images/Informationul_allli_pic03.jpg" width="100%" /></span>
+                                        <span class="bt">XDdan</span>
+                                        <span>下午5点前下单，今天...</span>
+                                        <span class="Rspan">
+                                            <span class="span1">15：43</span>
+                                            <!--<span class="Num float_r">3</span>-->
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="clear blank4"></div>
+                                <a href="#" class="LoadMore">加载更多&gt;&gt;</a>
+                            </div>
+                        </li>                    
+                    </ul>         
+                </div>           
+				<!--overhidden end-->           
             </div>
         	<!--left end-->
             <!--center-->
@@ -236,56 +241,71 @@
                     </div>
                 </div>
                 <!-- end-->
-                <!--聊天内容区-->
-                <div class="ChatArea">
-                	<p class="Time"><span class="Mini">15:43</span></p>
-                    <dl class="te">
-                    	<dt><img src="images/Informationul_allli_pic01.jpg" width="100%" /></dt>
-                        <dd>                        	
-                            <div class="spandiv">
-                            	<i class="ico"></i>
-                            	<span class="spanpic"><img src="images/ServiceSystem_C_ChatArea_dl_dtpic01.jpg" width="71" height="71" /></span>
-                                <span class="spanbt">【买多更优惠】【裸妆遮瑕必备】采萃多重修护BB霜50g ★韩国裸妆★遮瑕提亮★隔离</span>
-                                <span class="show"><span class="Num">&yen;6.9</span> /2人团</span>
-                            </div>
-                        </dd>
-                    </dl>
-                    <dl class="rig">
-                    	<dt><img src="images/ServiceSystem_C_ChatArea_dl_dt_kf.jpg" width="100%" /></dt>
-                        <dd>
-                        	<p class="Name">采萃—妙丽</p> 
-                            <div class="spandiv">
-                            	<i class="ico"></i>
-                                <span class="spanbt">亲亲，这款宝贝是有现货的呢，您可以放心拍哦O(_)O~</span>
-                            </div>
-                        </dd>
-                    </dl>
-                    <p class="Time"><span class="Mini">15:50</span></p>
-                    <dl class="Left">
-                    	<dt><img src="images/Informationul_allli_pic01.jpg" width="100%" /></dt>
-                        <dd>                        	
-                            <div class="spandiv">
-                            	<i class="ico"></i>
-                            	<span class="spanbt">今天下单什么时候发货的，在哪里发货的啊？这产品好用吗？</span>
-                            </div>
-                        </dd>
-                    </dl>
-                    <dl class="rig">
-                    	<dt><img src="images/ServiceSystem_C_ChatArea_dl_dt_kf.jpg" width="100%" /></dt>
-                        <dd>
-                        	<p class="Name">采萃—妙丽</p> 
-                            <div class="spandiv">
-                            	<i class="ico"></i>
-                                <span class="spanbt">亲亲，这款宝贝是有现货的呢，您可以放心拍哦O(_)O~</span>
-                            </div>
-                        </dd>
-                    </dl>
+                <!--overhide-->
+                <div class="ServiceSystem_Cover">
+                    <!--聊天内容区-->
+                    <div class="ChatArea">
+                        <p class="Time"><span class="Mini">15:43</span></p>
+                        <dl class="te">
+                            <dt><img src="images/Informationul_allli_pic01.jpg" width="100%" /></dt>
+                            <dd>                        	
+                                <div class="spandiv">
+                                    <i class="ico"></i>
+                                    <span class="spanpic"><img src="images/ServiceSystem_C_ChatArea_dl_dtpic01.jpg" width="71" height="71" /></span>
+                                    <span class="spanbt">【买多更优惠】【裸妆遮瑕必备】采萃多重修护BB霜50g ★韩国裸妆★遮瑕提亮★隔离</span>
+                                    <span class="show"><span class="Num">&yen;6.9</span> /2人团</span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="rig">
+                            <dt><img src="images/ServiceSystem_C_ChatArea_dl_dt_kf.jpg" width="100%" /></dt>
+                            <dd>
+                                <p class="Name">采萃—妙丽</p> 
+                                <div class="spandiv">
+                                    <i class="ico"></i>
+                                    <span class="spanbt">亲亲，这款宝贝是有现货的呢，您可以放心拍哦O(_)O~</span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <p class="Time"><span class="Mini">15:50</span></p>
+                        <dl class="Left">
+                            <dt><img src="images/Informationul_allli_pic01.jpg" width="100%" /></dt>
+                            <dd>                        	
+                                <div class="spandiv">
+                                    <i class="ico"></i>
+                                    <span class="spanbt">今天下单什么时候发货的，在哪里发货的啊？这产品好用吗？</span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="rig">
+                            <dt><img src="images/ServiceSystem_C_ChatArea_dl_dt_kf.jpg" width="100%" /></dt>
+                            <dd>
+                                <p class="Name">采萃—妙丽</p> 
+                                <div class="spandiv">
+                                    <i class="ico"></i>
+                                    <span class="spanbt">亲亲，这款宝贝是有现货的呢，您可以放心拍哦O(_)O~</span>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!--聊天内容区 end-->
                 </div>
-                <!--聊天内容区 end-->
-                <div class="clear blank18"></div>
+                <!--overhide end-->
+                <div class="clear"></div>
                 <!--编辑区-->
                 <div class="Editor">
-                	<div></div>
+                	<!---->
+                	<div class="ExpressionArea">
+                    	<div class="marginl5">
+                        	<input type="button" class="bodybtn inputAll inputAll_1" />
+                            <input type="button" class="bodybtn inputAll inputAll_2" />
+                            <input type="button" class="bodybtn inputAll inputAll_3" />
+                            <input type="button" class="bodybtn inputAll inputAll_4" />
+                            <input type="button" class="bodybtn inputAllbtn1" value="快捷回复" />
+                            <input type="button" class="bodybtn inputAllbtn1" value="自动回复" />
+                        </div>
+                    </div>
+                    <!-- end-->                    
                     <textarea name="" cols="" rows="" class="bodytxt spantest1">嘟满意平台禁止商家以任何方式引导用户至其他平台或者通过其他渠道进行交易，一旦检测到违规行为，将对店铺采取限制措施，详见规则中心</textarea>
                     <span class="spanR">
                     	<input type="button" class="float_l bodybtn spanbtn1" value="发送" />

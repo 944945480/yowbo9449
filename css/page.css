@@ -270,7 +270,7 @@ ul,li,p{ margin:0px; padding:0px; }
 .ServiceSystem_L .Cententul .Entli .div01 .Transfer a:last-child{ border-top-right-radius:2px; border-bottom-right-radius:2px; }
 .ServiceSystem_L .Cententul .Entli .div01 .Transfer a:hover,.ServiceSystem_L .Cententul .Entli .div01 .Transfer a.check{ color:#fff; background:#7f8393; }
 
-.ServiceSystem_L .Cententul .Entli .Title{ padding-left:29px; height:42px; line-height:42px; position:relative; z-index:4; color:#383838; font-size:12px; background:#fff; border-bottom:1px solid #ddd; }
+.ServiceSystem_L .Cententul .Entli .Title{ padding-left:29px; height:42px; line-height:42px; position:relative; z-index:4; color:#383838; font-size:12px; /*background:#fff;*/ border-bottom:1px solid #ddd; }
 .ServiceSystem_L .Cententul .Entli .Title .Lico{ width:6px; height:100%; display:block; position:absolute; z-index:5; left:16px; top:0px; background:url(../images/ServiceSystem_L_Cententul_Entli_navgat_Licobg1_1.png) no-repeat center center;  }
 /* 点击会话展开图标*/
 .ServiceSystem_L .Cententul .Entli .Title .Licobg1{ -webkit-transform:rotate(90deg); transform:rotate(90deg); }
@@ -337,10 +337,13 @@ ul,li,p{ margin:0px; padding:0px; }
 .ServiceSystem_C .Editor .spantest1{ padding:7px 0px; width:100%; line-height:16px; min-height:91px; font-size:13px; color:#282828; }
 .ServiceSystem_C .Editor .spanR{ float:right; margin-right:-12px; }
 .ServiceSystem_C .Editor .spanbtn1{ margin:8px 8px 0px; padding:0px 17px; display:inline-block; border-radius:3px; height:31px; line-height:31px; text-align:center; background:#7f8393; font-size:13px; color:#fff; float:left;  }
-
-
-
-
+.ServiceSystem_C .ExpressionArea{ width:100%; height:26px; line-height:26px; font-size:13px; color:#383838; position:absolute; z-index:2; left:0px; top:1px; }
+.ServiceSystem_C .ExpressionArea .inputAll{ width:30px; height:26px; display:block; float:left; }
+.ServiceSystem_C .ExpressionArea .inputAll_1{ background:url(../images/ServiceSystem_C_ExpressionArea_inputAll_1_1.png) no-repeat center center; }
+.ServiceSystem_C .ExpressionArea .inputAll_2{ background:url(../images/ServiceSystem_C_ExpressionArea_inputAll_2_1.png) no-repeat center center; }
+.ServiceSystem_C .ExpressionArea .inputAll_3{ background:url(../images/ServiceSystem_C_ExpressionArea_inputAll_3_1.png) no-repeat center center; }
+.ServiceSystem_C .ExpressionArea .inputAll_4{ background:url(../images/ServiceSystem_C_ExpressionArea_inputAll_4_1.png) no-repeat center center; }
+.ServiceSystem_C .ExpressionArea .inputAllbtn1{ padding:0px 7px; display:inline-block; height:26px; line-height:26px; text-align:center; font-size:13px; color:#383838;  }
 
 
 
