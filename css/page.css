@@ -263,6 +263,7 @@ h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px; }
 .ServiceSystem_L .box2 .divsoso .sobtn1{ width:30px; height:32px; display:block; position:absolute; z-index:5; left:0rem; top:0rem; background:url(../images/ServiceSystem_L_box2_divsoso_sobtn1.png) no-repeat center center; }
 .ServiceSystem_L .box2 .divsoso .sotxt1{ width:100%; border-radius:2px; height:32px; line-height:32px; font-size:14px; color:#222;}
 .ServiceSystem_L .Cententul,.ServiceSystem_L .Cententul .Entli{ width:100%; height:auto; display:block; }
+.ServiceSystem_L .Cententul {height:45rem; overflow:auto;}
 .ServiceSystem_L .Cententul .Entli .div01{ width:100%; display:block; }
 .ServiceSystem_L .Cententul .Entli .div01 .P1{ width:100%; height:auto; display:inline-block; border-bottom:1px solid #ddd; display:none; }
 .ServiceSystem_L .Cententul .Entli .div01 .Transfer{ margin-left:13px; margin-top:5px; height:33px; background:#eeeeee; }
@@ -321,7 +322,7 @@ h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px; }
 
 
 .ServiceSystem_C .divrig .spanpic1:hover,.ServiceSystem_C .divrig .spanpic1.check{ background:url(../images/ServiceSystem_C_divrig_spanpic1_2.png) no-repeat center center; }
-.ServiceSystem_C .ChatArea{ padding:0px 15px; display:block; }
+.ServiceSystem_C .ChatArea{ padding:0px 15px; display:block; height:30.7rem;overflow:auto; }
 .ServiceSystem_C .ChatArea .Time{ width:100%; text-align:center; }
 .ServiceSystem_C .ChatArea .Time .Mini{ margin:12px 0px 5px; display:inline-block; height:19px; line-height:19px; padding:0px 8px; border-radius:3px; background:#dadada; color:#fff; font-size:12px; }
 .ServiceSystem_C .ChatArea dl{ position:relative; z-index:1; display:block; line-height:22px; font-size:13px; color:#9d9d9d; }
@@ -343,17 +344,19 @@ h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px; }
 .ServiceSystem_C .ChatArea dl.te dd .spandiv .spanpic{ width:71px; height:71px; display:block; position:absolute; z-index:2; left:11px; top:13px; }
 .ServiceSystem_C .ChatArea dl.te dd .spandiv .spanbt{ font-size:13px; color:#2d75ef; line-height:19px; display:block; }
 .ServiceSystem_C .ChatArea dl.te dd .Num{ font-size:18px; color:#ec3434; }
+.ServiceSystem_C .ChatArea dl dd .spandiv .spanbt img{max-width:100%;}
 .ServiceSystem_C .ChatArea dl.rig dd .spandiv{ margin-left:90px; padding:12px 15px 8px 15px; background:#98e165; line-height:22px; font-size:13px; color:#2a2a2a; }
 .ServiceSystem_C .ChatArea dl.rig dd .Name{ width:100%; text-align:right; }
 
 .ServiceSystem_C .Editor{ padding:27px 19px 47px 6px; display:block; border-top:1px solid #e9e9e9; position:relative; z-index:2; }
-.ServiceSystem_C .Editor .spantest1{ padding:7px 0px; width:100%; line-height:16px; min-height:91px; font-size:13px; color:#282828; }
+.ServiceSystem_C .Editor .spantest1{ padding:7px 5px; width:100%; line-height:16px; min-height:91px; font-size:13px; color:#282828; resize:none; border: 1px solid #ccc; outline:none;}
 .ServiceSystem_C .Editor .spanR{ float:right; margin-right:-12px; }
 .ServiceSystem_C .Editor .spanbtn1{ margin:8px 8px 0px; padding:0px 17px; display:inline-block; border-radius:3px; height:31px; line-height:31px; text-align:center; background:#7f8393; font-size:13px; color:#fff; float:left;  }
 .ServiceSystem_C .ExpressionArea{ width:100%; height:26px; line-height:26px; font-size:13px; color:#383838; position:absolute; z-index:2; left:0px; top:1px; }
 .ServiceSystem_C .ExpressionArea .inputAll{ width:30px; height:26px; display:block; float:left; }
 .ServiceSystem_C .ExpressionArea .inputAll_1{ background:url(../images/ServiceSystem_C_ExpressionArea_inputAll_1_1.png) no-repeat center center; }
 .ServiceSystem_C .ExpressionArea .inputAll_2{ background:url(../images/ServiceSystem_C_ExpressionArea_inputAll_2_1.png) no-repeat center center; }
+.ServiceSystem_C .ExpressionArea .inputAll_2 .kefuimg{ display:none; }
 .ServiceSystem_C .ExpressionArea .inputAll_3{ background:url(../images/ServiceSystem_C_ExpressionArea_inputAll_3_1.png) no-repeat center center; }
 .ServiceSystem_C .ExpressionArea .inputAll_4{ background:url(../images/ServiceSystem_C_ExpressionArea_inputAll_4_1.png) no-repeat center center; }
 .ServiceSystem_C .ExpressionArea .inputAllbtn1{ padding:0px 7px; display:inline-block; height:26px; line-height:26px; text-align:center; font-size:13px; color:#383838;  }
