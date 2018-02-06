@@ -7,7 +7,7 @@ $(function(){
 	//left
 	var _ServiceSystemLover=$(".ServiceSystem_Lover");	
 	_ServiceSystemLoverH=_WinH-_ServiceSystemHeadH-_ServiceSystemLnavgatH;
-	_ServiceSystemLover.css({"height":_ServiceSystemLoverH,"overflow":"scroll"});
+	_ServiceSystemLover.css({"height":_ServiceSystemLoverH,"overflow-y":"scroll"});
 	
 	//center	
 	var _ServiceSystemCover=$(".ServiceSystem_Cover");
@@ -35,5 +35,41 @@ $(function(){
 	_ServiceSystemLbox2btn1.click(function(){
 		_ServiceSystemLCententulliX.toggleClass("Xuan");	
 	});
+	
+	//right
+	
+	var _ServiceSystemRoverYhide=$(".ServiceSystem_R .overYhide");
+	var _ServiceSystemRpaddbotfdH=$(".ServiceSystem_R .paddbotfd").outerHeight(true);
+	_ServiceSystemRoverYhide.css({"height":_WinH-_ServiceSystemHeadH-_ServiceSystemLnavgatH-_ServiceSystemRpaddbotfdH});
+	/* 商品推荐内的切换*/
+	var _Recommendulli=$(".Recommendul .li_01");	
+	var _RecommendNrulli=$(".RecommendNrul_01 .li_01");
+	_RecommendNrulli.hide();
+	_Recommendulli.removeClass("check");
+	_Recommendulli.eq(0).addClass("check");
+	_RecommendNrulli.eq(0).show();
+	_Recommendulli.click(function(){
+		$(this).addClass("check");
+		$(this).siblings().removeClass("check");
+		var _thisoffer=$(this).index();
+		_RecommendNrulli.eq(_thisoffer).show();
+		_RecommendNrulli.eq(_thisoffer).siblings().hide();		
+	});
+	
+	/* 最新订单内的切换*/
+	var _ShopOrderulli=$(".ShopOrderul .li_01");
+	var _ShopOrderNrulli=$(".ShopOrderNrul .li_01");
+	_ShopOrderNrulli.hide();
+	_ShopOrderulli.removeClass("check");
+	_ShopOrderulli.eq(0).addClass("check");	
+	_ShopOrderNrulli.eq(0).show();	
+	_ShopOrderulli.click(function(){
+		$(this).addClass("check");	
+		$(this).siblings().removeClass("check");
+		var _thisShopOrder=$(this).index();
+		_ShopOrderNrulli.eq(_thisShopOrder).show();
+		_ShopOrderNrulli.eq(_thisShopOrder).siblings().hide();
+	});
+	
 	
 });

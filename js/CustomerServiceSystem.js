@@ -2,6 +2,8 @@
 
 $(function(){
 	//客服系统
+	var _WinH=$(window).outerHeight(true);	
+	 
 	//复选框1
 	var _idSelectAll=$(".SelectAll:has(:checkbox)");
 	_idSelectAll.click(function(){
