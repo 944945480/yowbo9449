@@ -71,5 +71,29 @@ $(function(){
 		_ShopOrderNrulli.eq(_thisShopOrder).siblings().hide();
 	});
 	
+	//最新订单内的店铺订单中改价按钮效果
+	var _NoManualPrice=$(".NoManualPrice");
+	var _ManualPrice=$(".ManualPrice");
+	var _ManualPricebtn=$(".ManualPricebtn");
+	var _PreserHandwribtn=$(".PreserHandwribtn");
+	_ManualPrice.hide();
+	_ManualPricebtn.click(function(){
+		_NoManualPrice.hide();
+		_ManualPrice.show();	
+	});
+	_PreserHandwribtn.click(function(){
+		_ManualPrice.hide();	
+		_NoManualPrice.show();
+	});
+	
+	//最新订单内的店铺订单中备注按钮效果
+	var _Remarksbtn=$(".Remarksbtn");
+	_Remarksbtn.siblings(".dl_02").hide();
+	_Remarksbtn.click(function(){
+		$(this).siblings(".dl_02").show();
+	});
+	_PreserHandwribtn.click(function(){
+		_Remarksbtn.siblings(".dl_02").hide();	
+	});
 	
 });

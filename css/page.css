@@ -187,6 +187,7 @@ h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px; }
 
 /* 客服系统*/
 .ServiceSystem_cor1{ color:#ec3434; }
+.ServiceSystem_cor2{ color:#989898; }
 .ServiceSystem_tan{ width:100%; height:100%; position:relative; z-index:1000; background:#fff; }
 .ServiceSystem_headbtn{ width:36px; height:24px; display:block; float:right; /*font-weight:200;*/ cursor:pointer; text-align:center; color:#141414; }
 .ServiceSystem_close{ display:inline-block; width:15px; height:15px; /*width:.5rem; height:.5rem;*/ overflow:hidden; position:relative; z-index:5; }
@@ -386,7 +387,7 @@ h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px; }
 .ServiceSystem_R .overYhide .IntroductoryOffer .ul_01 .li_01{ -webkit-box-flex:1; flex:1; }
 .ServiceSystem_R .overYhide .IntroductoryOffer .ul_01 .li_01 a{ display:block; line-height:2.5; text-align:center; font-size:14px; color:#656565; }
 .ServiceSystem_R .overYhide .IntroductoryOffer .ul_01 .li_01:hover a,.ServiceSystem_R .overYhide .IntroductoryOffer .ul_01 .check a{ color:#383838; background:#ebebec; border-left:1px solid #dadada; border-right:1px solid #dadada; border-top:1px solid #dadada; margin-bottom:-1px; border-top-left-radius:4px; border-top-right-radius:4px; }
-.ServiceSystem_R .overYhide .Nrul_01 .li_01{ padding:0px 10px; display:block; }
+.ServiceSystem_R .overYhide .Nrul_01>.li_01{ padding:0px 10px; display:block; }
 .ServiceSystem_R .overYhide .Nrul_01 .li_01 .p1so{ padding-right:41px; padding-left:10px; background:#fff; height:29px; border:1px solid #d0d0d0; border-radius:3px; position:relative; z-index:2; }
 .ServiceSystem_R .overYhide .Nrul_01 .li_01 .p1txt1{ width:100%; height:29px; line-height:29px; display:block; font-size:14px; color:#222; }
 .ServiceSystem_R .overYhide .Nrul_01 .li_01 .p1btn1{ width:40px; height:100%; display:block; font-size:14px; color:#222; border-left:1px solid #d0d0d0; background:url(../images/ServiceSystem_R_overYhide_Nrul_01_li_01_p1btn1.png) no-repeat center center #efefef; position:absolute; z-index:2; right:0rem; top:0rem; }
@@ -417,13 +418,48 @@ h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px; }
 .ServiceSystem_R .WaitingorderMeun{ width:100%; height:auto; display:-webkit-box; display:flex; text-align:center; }
 .ServiceSystem_R .WaitingorderMeun .alink{ -webkit-box-flex:1; flex:1; font-size:12px; color:#7f7f7f; text-align:center; height:19px; line-height:19px; background:url(../images/ReceivingStateMeun_alinkbg.png) no-repeat left center; }
 .ServiceSystem_R .WaitingorderMeun .alink:first-child{ background:none; }
-.ServiceSystem_R .WaitingorderMeun .alink:hover,.WaitingorderMeun .check{ color:#282828; }
+.ServiceSystem_R .WaitingorderMeun .alink:hover,.ServiceSystem_R .WaitingorderMeun .check{ color:#282828; }
 .ServiceSystem_R .Waitingorderdl .dd_01{ padding:0px 8px; height:auto; line-height:27px; color:#989898; font-size:14px; display:block; }
-.ServiceSystem_R .ShopOrderNrul .li_01{ padding:0px 8px; display:block; }
-.ServiceSystem_R .ShopOrderNrul .li_01 .divtest{ padding:0px 5px; line-height:20px; font-size:14px; color:#989898; }
+.ServiceSystem_R .ShopOrderNrul .li_02{ /*padding:0px 8px;*/ display:block; position:relative; z-index:100; }
+.ServiceSystem_R .ShopOrderNrul .li_02 .divtest{ padding:0px 5px; line-height:20px; font-size:14px; color:#989898; }
 /* 店铺商品*/
-.ServiceSystem_R .ShopOrderNrul .li_01 .div01{ margin-top:8px; padding:0px 8px; display:block; background:#fff; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01{ margin-top:8px;/* padding:0px 8px;*/ display:block; line-height:20px; color:#383838; font-size:12px; background:#fff; }
 .ServiceSystem_R .ShopOrderNrul .li_01 .div01:hover{ box-shadow:0px 0px 5px 1px rgba(0,0,0,.41); }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .tuwen{ padding-left:62px; padding-right:5px; padding-top:7px; border-top:1px solid #e4e4e4; min-height:55px; height:auto; position:relative; z-index:1; line-height:19px; color:#383838; font-size:13px; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .tuwen .spanpic{ width:51px; height:52px; position:absolute; z-index:1; left:4px; top:10px; display:block; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .p1{ line-height:22px; font-size:13px; color:#383838; padding-bottom:.5rem; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .Handwriting{ line-height:22px; font-size:12px; color:#383838; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .Handwritingbx{ border-top:1px solid #e4e4e4 }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .Handwritingtxt1{ width:37px; text-align:center; height:21px; line-height:21px; background:#c5c5c5; font-size:12px; color:#fff; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .Handwriting .test{ line-height:18px; color:#9c9c9c; font-size:12px; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .Handwribtn{ margin-right:7px; padding:0px 9px; display:inline-block; cursor:pointer; font-size:12px; border-style:none; background:none; float:left; font-family:"微软雅黑"; border-radius:.025rem; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .Handwribtn1{ color:#fff; background:#7f8393; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .Handwribtn2{ color:#7f8393; background:#fff; border:1px solid #282828; }
+
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .div2{ padding-top:9px; line-height:22px; font-size:13px; color:#383838; border-top:1px solid #e4e4e4; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02{ width:100%; display:block; } 
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02{ float:left; margin-top:7px; margin-right:9px; position:relative; z-index:2; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02 .item{ padding:0px 8px; height:20px; line-height:20px; text-align:center; border-radius:3px; border:1px solid #7f8393; font-size:12px; color:#7f8393; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02 .item:hover,.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02 .check{ background:#7f8393; color:#fff; }
+
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02 .dl_02{ width:245px; max-width:245px; height:auto; display:block; position:absolute; z-index:5; right:-70px; top:18px;  padding-top:10px; display:block; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02:hover .dl_02{ width:245px; max-width:245px; height:auto; display:block; position:absolute; z-index:5; right:-70px; top:18px;  padding-top:10px; display:block; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02 .dl_02 .dt_01{ width:100%; height:9px; display:block; background:url(../images/ServiceSystem_L_statedl_dt_01bg1_1.png) no-repeat right 83px top; position:absolute; z-index:6; left:0rem; top:2px; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02 .dl_02 .dd_01{ border:1px solid #7f8393; background:#fff; box-shadow:0px 0px 3px 3px rgba(153,153,153,.3); }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02 .dl_02 .dd_01 .secdiv{ padding:4px 18px 0px 12px; display:block; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02 .dl_02 .dd_01 .secdiv .pt{ line-height:27px; font-size:12px; color:#383838; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02 .dl_02 .dd_01 .secdiv .pt i{ width:9px; height:27px; display:block; background:url(../images/ServiceSystem_R_ShopOrderNrul_li_01_pt_ibg.png) no-repeat left center; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02 .dl_02 .dd_01 .secdiv .p2{ line-height:16px; color:#acacac; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02 .dl_02 .dd_01 .secdiv .testdiv{ padding-top:4px; padding-left:4px; min-height:45px; border:1px solid #dddddd; }
+.ServiceSystem_R .ShopOrderNrul .li_01 .div01 .ul_02 .li_02 .dl_02 .dd_01 .secdiv .testdivtxt1{ width:100%; min-height:45px; display:block; line-height:21px; font-size:12px; color:#acacac; }
+
+.ServiceSystem_R .paging{ width:100%; display:block; }
+.ServiceSystem_R .pagingfd{ position:sticky; z-index:100; left:0rem; bottom:0rem; right:0rem; }
+
+
+
+
+
 
 
 
