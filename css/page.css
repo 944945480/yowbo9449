@@ -456,9 +456,38 @@ h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px; }
 .ServiceSystem_R .paging{ width:100%; display:block; }
 .ServiceSystem_R .pagingfd{ position:sticky; z-index:100; left:0rem; bottom:0rem; right:0rem; }
 
+/* 快捷回复*/
+.ServiceSystem_R .overYhide .Quick_HF{ padding:0px 15px; display:block; background:#fff; border-bottom:1px solid #dadada; }
+.ServiceSystem_R .overYhide .Quick_HF .ul_01{ width:100%; height:1.7; display:-webkit-box; display:flex; }
+.ServiceSystem_R .overYhide .Quick_HF .ul_01 .li_01{ -webkit-box-flex:1; flex:1; }
+.ServiceSystem_R .overYhide .Quick_HF .ul_01 .li_01 a{ display:block; line-height:2.5; text-align:center; font-size:14px; color:#656565; }
+.ServiceSystem_R .overYhide .Quick_HF .ul_01 .li_01:hover a,.ServiceSystem_R .overYhide .Quick_HF .ul_01 .check a{ color:#383838; background:#ebebec; border-left:1px solid #dadada; border-right:1px solid #dadada; border-top:1px solid #dadada; margin-bottom:-1px; border-top-left-radius:4px; border-top-right-radius:4px; }
 
+.ServiceSystem_R .overYhide .QuickHF_NRul .QuickHF_li{ width:100%; height:auto; display:block; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .sodiv{ margin:0px 15px; padding-right:56px; position:relative; z-index:10; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .sodiv .sobtn1{ width:49px; height:25px; line-height:25px; text-align:center; background:#7f8393; color:#fff; font-size:14px; position:absolute; z-index:1; right:0rem; top:0rem; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .sodiv .spanbox{ padding-left:7px; height:26px; background:#fff; border:1px solid #e0e0e0; display:block; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .sodiv .sotxt1{ width:100%; height:26px; line-height:26px; display:block; font-size:14px; color:#222; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv{ padding:0px 13px 0px 12px; display:block; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .MeunP{ padding-right:57px; display:block; position:relative; z-index:100; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .btn1{ border-radius:2px; width:49px; height:22px; line-height:22px; text-align:center; color:#fff; background:#7f8393; font-size:14px; display:block; position:absolute; z-index:100; right:4px; top:0rem; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .Meuna{ display:inline-block; padding:0px 11px 0px 7px;  margin-left:7px; margin-right:10px; border-radius:2px; height:20px; line-height:20px; background:#fff; border:1px solid #7f8393; font-size:14px; color:#7f8393; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .Meuna .spanico{ padding-left:18px; display:inline-block; height:20px; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .Meuna .ico1{ background:url(../images/CustomPhrasediv_Meuna_ico1_1.png) no-repeat left center; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .Meuna .ico2{ background:url(../images/CustomPhrasediv_Meuna_ico2_1.png) no-repeat left center; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .dl_01{ width:100%; height:auto; display:block; margin-bottom:0px; margin-top:3px; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .dl_01 .dt_01{ padding-right:34px; padding-left:6px; height:29px; line-height:29px; font-size:14px; color:#2b2b2b; background:#f7f7f7; position:relative; z-index:101; display:block; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .dl_01 .dt_01 .Rico{ width:34px; height:100%; display:block; position:absolute; z-index:101; right:0rem; top:0rem; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .dl_01 .dt_01 .Rico1{ background:url(../images/CustomPhrasediv_dl_01_dt_01_Rico1_1.png) no-repeat left 11px center; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .dl_01 .dt_01 .Rico2{ background:url(../images/CustomPhrasediv_dl_01_dt_01_Rico2_1.png) no-repeat left 7px center; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .dl_01 .dt_01 .addbtn{ width:20px; height:100%; float:right; background:url(../images/CustomPhrasediv_dl_01_dt_01_addbtn.png) no-repeat center center; }
 
-
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .dl_01 .dd_01{ padding:4px 0px 8px 9px; background:#fff; display:block; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .dl_01 .dd_01 .p1{ padding-right:60px; position:relative; z-index:101; height:30px; line-height:30px; font-size:13px; color:#7d7d7d; overflow:hidden; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .dl_01 .dd_01 .p1btn{ border-style:none; cursor:pointer; background:none; font-family:'微软雅黑'; position:absolute; z-index:101; top:0rem; height:100%; width:16px; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .dl_01 .dd_01 .p1btn1{ right:29px; background:url(../images/CustomPhrasediv_dl_01_dd_01_p1btn1_1.png) no-repeat center center; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .dl_01 .dd_01 .p1btn2{ right:6px; background:url(../images/CustomPhrasediv_dl_01_dd_01_p1btn2_1.png) no-repeat center center; }
+.ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .EditGroupingbtn{ padding-left:35px; height:30px; color:#7f8393; font-size:14px; background:url(../images/CustomPhrasediv_dl_01_dt_01_addbtn.png) no-repeat left 7px center; }
 
 
 

@@ -96,4 +96,33 @@ $(function(){
 		_Remarksbtn.siblings(".dl_02").hide();	
 	});
 	
+	//快捷回复里面的与自定义短语中的切换
+	var _QuickHFulli=$(".Quick_HF .ul_01 .li_01");
+	var _QuickHFNRulli=$(".QuickHF_NRul .QuickHF_li");
+	_QuickHFNRulli.hide();
+	_QuickHFulli.eq(0).addClass("check");
+	_QuickHFNRulli.eq(0).show();
+	_QuickHFulli.click(function(){
+		var _thisQuickHFindex=$(this).index();	
+		_QuickHFNRulli.eq(_thisQuickHFindex).show();
+		_QuickHFNRulli.eq(_thisQuickHFindex).siblings().hide();
+	});
+	
+	//快捷回复 折叠展开与收缩
+	var _CustomPhrasedivdldt=$(".CustomPhrasediv .dl_01 .dt_01");
+	_CustomPhrasedivdldt.siblings(".dd_01").hide();
+	_CustomPhrasedivdldt.click(function(){
+		$(this).siblings(".dd_01").slideDown();	
+		$(this).parent().siblings().find(".dd_01").slideUp();
+	});
+	
+	//快捷回复 点击编辑弹出
+	var _Groupingbtn=$(".Groupingbtn");
+	var _Groupingshow=$(".Groupingshow");
+	_Groupingshow.hide();
+	_Groupingbtn.click(function(){
+		_Groupingshow.toggle();
+	});
+	
+	
 });
