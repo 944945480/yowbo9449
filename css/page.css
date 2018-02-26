@@ -177,7 +177,7 @@ h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px; }
 .HistoryStoreData .nrul .li_01 dl dt.w5{ width:11.52%; }
 .CommoditySalestab{ width:100%; height:auto; display:table; }
 .CommoditySalestab td{ text-align:left; min-height:86px; height:auto; line-height:60px; font-size:14px; color:#000; display:inline-block; }
-.CommoditySalestab tr:
+.CommoditySalestab tr{}
 .CommoditySalestab td.w1{ text-align:center; }
 .CommoditySalestab td:first-child{ text-align:center; }
 .HistoryStoreData .nrul .li_01 .pic{ width:67px; height:67px; border:1px solid #e0e0e0; display:block; float:left; margin-left:4.5%; }
@@ -187,12 +187,8 @@ h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px; }
 
 /* 客服系统*/
 .ServiceSystem_cor1{ color:#ec3434; }
-<<<<<<< HEAD
 .ServiceSystem_cor2{ color:#989898; }
-.ServiceSystem_tan{ width:100%; height:100%; position:relative; z-index:1000; background:#fff; }
-=======
 .ServiceSystem_tan{ width:100%; height:100%; position:relative; background:#fff; }
->>>>>>> 89c7db03a2728e9e7b911e4e4965ff29f6cc71b2
 .ServiceSystem_headbtn{ width:36px; height:24px; display:block; float:right; /*font-weight:200;*/ cursor:pointer; text-align:center; color:#141414; }
 .ServiceSystem_close{ display:inline-block; width:15px; height:15px; /*width:.5rem; height:.5rem;*/ overflow:hidden; position:relative; z-index:5; }
 .ServiceSystem_close::before,.ServiceSystem_close::after{ position:absolute; z-index:5; content:'.'; width:15px; height:1px; left:0px; top:8px; /*top:.25rem; left:.25rem; margin-top:-.125rem; height:.125rem;*/ background:#141414; width:100%; vertical-align:middle; -webkit-transform:rotate(45deg); transform:rotate(45deg); }
