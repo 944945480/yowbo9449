@@ -124,5 +124,229 @@ $(function(){
 		_Groupingshow.toggle();
 	});
 	
+	//居中弹出	
+	var G_WindowH=$(window).outerHeight(true);
+	var G_WindowW=$(window).outerWidth(true);
+	var _aqszyy=$(".aqszyy");
+	var _aqszmid=$(".aqszfd .aqszmid");
+	_aqszyy.hide();	
+	_aqszmid.hide();	
+	var _AddChatMeun=$(".AddChatMeun");
+	var _Conversationtan=$(".Conversation_tan");  //建立会话
+	var _TransferMeun=$(".TransferMeun");
+	var _Transfertan=$(".Transfer_tan");  //转移
+	var _ReportMeun=$(".ReportMeun");
+	var _Reporttan=$(".Report_tan");  //举报
+	var _MoveToBlacklistMeun=$(".MoveToBlacklistMeun");
+	var _MoveBlacklisttan=$(".MoveBlacklist_tan"); //移至黑名单
+	var _ManagingBlacklistsMeun=$(".ManagingBlacklistsMeun");
+	var _BlacklistManagetan=$(".BlacklistManage_tan"); // 黑名单管理
+	var _EditMeun=$(".EditMeun");
+	var _EditSymboltan=$(".EditSymbol_tan");  //点击编辑符号
+	var _AddbtnMeun=$(".addbtn");
+	var _AddSymboltan=$(".AddSymbol_tan");  //点击添加符号
+	var _EditGroupingMeun=$(".EditGroupingMeun");
+	var _EditingGroupingtan=$(".EditingGrouping_tan"); //点击编辑分组
+	var _HotkeyMeun=$(".HotkeyMeun");
+	var _Hotkeytan=$(".Hotkey_tan");  //点击热键
+	
+	_Conversationtan.hide();
+	_Transfertan.hide();
+	_Reporttan.hide();
+	_MoveBlacklisttan.hide();
+	_BlacklistManagetan.hide();
+	_EditSymboltan.hide();
+	_AddSymboltan.hide();
+	_EditingGroupingtan.hide();
+	_Hotkeytan.hide();
+	
+	_AddChatMeun.click(function(){
+		_Conversationtan.show();
+		_aqszyy.show();	
+		_aqszmid.show();
+		_Transfertan.hide();
+		_Reporttan.hide();
+		_MoveBlacklisttan.hide();
+		_BlacklistManagetan.hide();
+		_EditSymboltan.hide();
+		_AddSymboltan.hide();
+		_EditingGroupingtan.hide();
+		_Hotkeytan.hide();
+		_thisH=_aqszmid.outerHeight(true);	
+		var _banH=(G_WindowH-_thisH)/2;	
+		$(".aqszfd").css({"top":_banH}); 	
+	});
+	_TransferMeun.click(function(){
+		_Transfertan.show();
+		_aqszyy.show();	
+		_aqszmid.show();
+		_Conversationtan.hide();
+		_Reporttan.hide();
+		_MoveBlacklisttan.hide();
+		_BlacklistManagetan.hide();
+		_EditSymboltan.hide();
+		_AddSymboltan.hide();
+		_EditingGroupingtan.hide();
+		_Hotkeytan.hide();
+		_thisH=_aqszmid.outerHeight(true);	
+		var _banH=(G_WindowH-_thisH)/2;	
+		$(".aqszfd").css({"top":_banH}); 	
+	});
+	_ReportMeun.click(function(){
+		_Reporttan.show();
+		_aqszyy.show();	
+		_aqszmid.show();
+		_Conversationtan.hide();
+		_Transfertan.hide();
+		_MoveBlacklisttan.hide();
+		_BlacklistManagetan.hide();
+		_EditSymboltan.hide();
+		_AddSymboltan.hide();
+		_EditingGroupingtan.hide();
+		_Hotkeytan.hide();
+		_thisH=_aqszmid.outerHeight(true);	
+		var _banH=(G_WindowH-_thisH)/2;	
+		$(".aqszfd").css({"top":_banH}); 	
+	});
+	_MoveToBlacklistMeun.click(function(){
+		_MoveBlacklisttan.show();
+		_aqszyy.show();	
+		_aqszmid.show();
+		_Conversationtan.hide();
+		_Transfertan.hide();
+		_Reporttan.hide();
+		_BlacklistManagetan.hide();
+		_EditSymboltan.hide();
+		_AddSymboltan.hide();
+		_EditingGroupingtan.hide();
+		_Hotkeytan.hide();
+		_thisH=_aqszmid.outerHeight(true);	
+		var _banH=(G_WindowH-_thisH)/2;	
+		$(".aqszfd").css({"top":_banH}); 	
+	});
+	_ManagingBlacklistsMeun.click(function(){
+		_BlacklistManagetan.show();
+		_aqszyy.show();	
+		_aqszmid.show();
+		_Conversationtan.hide();
+		_Transfertan.hide();
+		_Reporttan.hide();
+		_MoveBlacklisttan.hide();
+		_EditSymboltan.hide();
+		_AddSymboltan.hide();
+		_EditingGroupingtan.hide();
+		_Hotkeytan.hide();
+		_thisH=_aqszmid.outerHeight(true);	
+		var _banH=(G_WindowH-_thisH)/2;	
+		$(".aqszfd").css({"top":_banH}); 	
+	});
+	_EditMeun.click(function(){
+		_EditSymboltan.show();
+		_aqszyy.show();	
+		_aqszmid.show();
+		_Conversationtan.hide();
+		_Transfertan.hide();
+		_Reporttan.hide();
+		_MoveBlacklisttan.hide();
+		_BlacklistManagetan.hide();
+		_AddSymboltan.hide();
+		_EditingGroupingtan.hide();
+		_Hotkeytan.hide();
+		_thisH=_aqszmid.outerHeight(true);	
+		var _banH=(G_WindowH-_thisH)/2;	
+		$(".aqszfd").css({"top":_banH}); 	
+	});
+	_AddbtnMeun.click(function(){
+		_AddSymboltan.show();
+		_aqszyy.show();	
+		_aqszmid.show();
+		_Conversationtan.hide();
+		_Transfertan.hide();
+		_Reporttan.hide();
+		_MoveBlacklisttan.hide();
+		_BlacklistManagetan.hide();
+		_EditSymboltan.hide();
+		_EditingGroupingtan.hide();
+		_Hotkeytan.hide();
+		_thisH=_aqszmid.outerHeight(true);	
+		var _banH=(G_WindowH-_thisH)/2;	
+		$(".aqszfd").css({"top":_banH}); 	
+	});
+	_EditGroupingMeun.click(function(){
+		_EditingGroupingtan.show();
+		_aqszyy.show();	
+		_aqszmid.show();
+		_Conversationtan.hide();
+		_Transfertan.hide();
+		_Reporttan.hide();
+		_MoveBlacklisttan.hide();
+		_BlacklistManagetan.hide();
+		_EditSymboltan.hide();
+		_AddSymboltan.hide();
+		_Hotkeytan.hide();
+		_thisH=_aqszmid.outerHeight(true);	
+		var _banH=(G_WindowH-_thisH)/2;	
+		$(".aqszfd").css({"top":_banH}); 	
+	});
+	_HotkeyMeun.click(function(){
+		_Hotkeytan.show();
+		_aqszyy.show();	
+		_aqszmid.show();
+		_Conversationtan.hide();
+		_Transfertan.hide();
+		_Reporttan.hide();
+		_MoveBlacklisttan.hide();
+		_BlacklistManagetan.hide();
+		_EditSymboltan.hide();
+		_AddSymboltan.hide();
+		_EditingGroupingtan.hide();
+		_thisH=_aqszmid.outerHeight(true);	
+		var _banH=(G_WindowH-_thisH)/2;	
+		$(".aqszfd").css({"top":_banH}); 	
+	});
+	_aqszyy.click(function(){
+		_Conversationtan.hide();
+		_aqszyy.hide();	
+		_aqszmid.hide();
+		_Transfertan.hide();
+		_Reporttan.hide();
+		_MoveBlacklisttan.hide();
+		_BlacklistManagetan.hide();
+		_EditSymboltan.hide();
+		_AddSymboltan.hide();
+		_EditingGroupingtan.hide();
+		_Hotkeytan.hide();	
+	});
+	
+	
+	//举报弹出的 复选框
+	//复选框2
+	var _idReportla2=$(".Report_la2:has(:checkbox)");
+	_idReportla2.click(function(){
+	    var $chk=$(this).find("input:checkbox");
+		if($(this).hasClass("Report_la2_check")){
+			$(this).removeClass("Report_la2_check");
+			$chk.attr("checked",false);
+		} else {
+			$(this).addClass("Report_la2_check");
+			$chk.attr("checked",true);
+		}		
+		
+	});		
+	//黑名单管理弹出的 复选框
+	//复选框2
+	var _idBlacklistManage=$(".BlacklistManage_la2:has(:checkbox)");
+	_idBlacklistManage.click(function(){
+	    var $chk=$(this).find("input:checkbox");
+		if($(this).hasClass("BlacklistManage_la2_check")){
+			$(this).removeClass("BlacklistManage_la2_check");
+			$chk.attr("checked",false);
+		} else {
+			$(this).addClass("BlacklistManage_la2_check");
+			$chk.attr("checked",true);
+		}		
+		
+	});		
+	
 	
 });

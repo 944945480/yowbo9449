@@ -493,7 +493,99 @@ h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px; }
 .ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .dl_01 .dd_01 .p1btn2{ right:6px; background:url(../images/CustomPhrasediv_dl_01_dd_01_p1btn2_1.png) no-repeat center center; }
 .ServiceSystem_R .overYhide .QuickHF_NRul .CustomPhrasediv .EditGroupingbtn{ padding-left:35px; height:30px; color:#7f8393; font-size:14px; background:url(../images/CustomPhrasediv_dl_01_dt_01_addbtn.png) no-repeat left 7px center; }
 
+/* 弹出框*/
+.aqszyy{ width:100%; height:100%; position:fixed; z-index:1004; left:0px; top:0px; bottom:0px; display:none; background:rgba(0,0,0,0.35); }
+.aqszfd{ width:100%; height:auto; position:fixed; z-index:1005; left:0px; display:block; overflow-y:auto; top:20px; }
+.aqszmid{ width:100%; position:relative; z-index:1005; display:none; }
+.aqszmid h1{ width:100%; height:51px; line-height:51px; text-align:center; display:block; background:#7f8393; color:#fff; font-size:16px; font-weight:normal; }
+.aqszmid .btn{ border-style:none; font-family:"微软雅黑"; background:none; cursor:pointer;  border-radius:2px; width:82px; height:30px; line-height:30px; text-align:center; padding:0rem; margin:0px 5px; display:inline-block; font-size:14px; }
+.aqszmid .btn1{ color:#fff; background:#7f8393; border:1px solid #7f8393; }
+.aqszmid .btn2{ color:#7f8393; background:#fff; border:1px solid #7f8393; }
 
 
+/* 建立会话 弹出*/
+.Tanbg{ transition: all 1s; -webkit-transition: all 1s; max-width:602px; margin:0 auto; background:#fff; border-radius:5px;  font-size:14px; color:#383838; position:relative; z-index:1000; }
+.Conversation_tan .soso{ padding-left:15px; padding-right:59px; height:40px; border:1px solid #dddddd; position:relative; z-index:5; display:block; }
+.Conversation_tan .sosotxt{ width:100%; height:40px; line-height:40px; display:block; color:#222; font-size:14px; }
+.Conversation_tan .sosobtn{ border-left:1px solid #d0d0d0; width:58px; height:100%; position:absolute; z-index:5; right:0rem; top:0rem; display:block; background:url(../images/Conversation_tan_sosobtnbg.png) no-repeat center center #efefef; }
 
+/* 转移 弹出*/
+.Transfer_tan .kuanbox{ padding:0px 30px; display:block; }
+.Transfer_tan .soso{ padding-left:15px; padding-right:59px; height:40px; border:1px solid #dddddd; position:relative; z-index:5; display:block; }
+.Transfer_tan .sosotxt{ width:100%; height:40px; line-height:40px; display:block; color:#222; font-size:14px; }
+.Transfer_tandl{ width:100%; display:block; font-weight:bold; background:#e2e2e2; font-size:14px; color:#383838;  }
+.Transfer_tandl dt{ float:left; display:block; height:35px; line-height:35px; }
+.Transfer_tandl dt.bf26{ width:26.7%; }
+.Transfer_tandl dt.bf24{ width:24.5%; }
+.Transfer_tandl dt.bf19{ width:19.4%; }
+.Transfer_tandl dt span{ padding-left:16px; }
+.Transfer_tantab{ width:100%; display:table; }
+.Transfer_tantab tr td{ border-bottom:1px solid #dfdfdf; height:45px; line-height:45px; text-align:left; font-size:14px; color:#8f8f8f; }
+.Transfer_tantab tr td:first-child{ color:#383838; }
 
+.Transfer_tan .overhide{ width:97%; padding-right:3%; max-height:250px; overflow-x:hidden; overflow-y:scroll; }
+.Transfer_tan .btn1{ display:inline-block; height:22px; line-height:22px; text-align:center; border-radius:2px; border:1px solid #7f8393; font-size:14px; color:#7f8393; padding:0px 6px; }
+
+/* 举报 弹出 */
+.Report_tan .ReportMid{ padding:0px 30px; display:block; }
+.Report_tan .ReportMid .div01{ padding:13px 26px 24px 12px; padding-right:26px; background:#f9f9f9; border:1px solid #e2e2e2; }
+.Report_tan .ReportMid .div01 .dl_01{ margin-bottom:0px; font-size:14px; color:#656565; line-height:20px; }
+.Report_tan .ReportMid .div01 .dl_01 .dt_01{ padding-left:24px; font-weight:normal; background:url(../images/Report_tan_ReportMid_div01dl_dtbg.png) no-repeat left center; }
+.Report_tan .ReportMid .div01 .dl_01 .dd_01{ padding-left:24px; }
+.Report_tan .ReportMid .dl_02{ margin-bottom:0px; margin-left:4px; margin-right:37px; border-bottom:1px solid #dfdfdf; height:45px; }
+.Report_tan .ReportMid .dl_02 .dd_02{ float:left; padding-left:3px; padding-right:38px; line-height:45px; display:block; }
+.Report_tan .ReportMid .p2{ line-height:24px; font-size:14px; color:#383838; } 
+.Report_tan .ReportMid .select1div{ padding-left:14px; height:36px; line-height:36px; font-size:14px; color:#383838; border:1px solid #ddd; display:block; max-width:525px; }
+.Report_tan .ReportMid .select1{ width:100%; display:block; height:34px; border:none; }
+.Report_tan .ReportMid .select1 option{ line-height:36px; }
+.Report_tan .ReportMid .btn{ border-style:none; font-family:"微软雅黑"; background:none; cursor:pointer;  border-radius:2px; width:82px; height:30px; line-height:30px; text-align:center; padding:0rem; margin:0px 5px; display:inline-block; font-size:14px; }
+.Report_tan .ReportMid .btn1{ color:#fff; background:#7f8393; border:1px solid #7f8393; }
+.Report_tan .ReportMid .btn2{ color:#7f8393; background:#fff; border:1px solid #ebebec; }
+
+.Report_la2{ padding-left:26px; height:27px; line-height:27px; line-height:27px; background:url(../images/Report_la2.png) no-repeat left 3px center; font-size:14px; color:#a8a8a8; }
+.Report_la2 .checkedclass { width:17px; height:16px; opacity:0; background:none;  cursor:pointer; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); position:absolute; right:3px; top:5px; z-index:1; }
+.Report_la2_check{ background:url(../images/Report_la2_check.png) no-repeat left 3px center; }
+
+/* 移至黑名单 弹出 */
+.MoveBlacklist_tan{ max-width:331px; }
+.MoveBlacklist_tan .MoveBlacklistMid{ padding:0px 26px 0px 24px; display:block; font-size:14px; line-height:20px; color:#868686; }
+.MoveBlacklist_tan .MoveBlacklistMid .btn{ border-style:none; font-family:"微软雅黑"; background:none; cursor:pointer;  border-radius:2px; width:82px; height:30px; line-height:30px; text-align:center; padding:0rem; margin:0px 5px; display:inline-block; font-size:14px; }
+.MoveBlacklist_tan .MoveBlacklistMid .btn1{ color:#fff; background:#7f8393; border:1px solid #7f8393; }
+.MoveBlacklist_tan .MoveBlacklistMid .btn2{ color:#7f8393; background:#fff; border:1px solid #7f8393; }
+.MoveBlacklist_tan .MoveBlacklistMid .bt{ line-height:22px; color:#383838; font-size:14px; width:100%; text-align:center; }
+
+/* 黑名单管理 弹出 */
+.BlacklistManage_tan{ max-width:288px; }
+.BlacklistManage_tan .BlacklistManage_M{ margin-left:30px; margin-right:23px; max-height:260px; overflow-x:hidden; overflow-y:scroll; }
+.BlacklistManage_tan .ul_01{ width:100%; height:auto; display:block; }
+.BlacklistManage_tan .ul_01 .li_01{ padding:10px 0px 10px 95px; position:relative; z-index:10; min-height:41px; line-height:41px; font-size:14px; color:#383838; border-bottom:1px solid #dfdfdf; }
+.BlacklistManage_la2{ width:17px; height:18px; position:absolute; z-index:10; left:6px; top:22px; background:url(../images/Report_la2.png) no-repeat left 3px center; font-size:14px; color:#a8a8a8; }
+.BlacklistManage_la2 .checkedclass { width:17px; height:18px; opacity:0; background:none;  cursor:pointer; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); position:absolute; left:6px; top:22px; z-index:1; }
+.BlacklistManage_la2_check{ background:url(../images/Report_la2_check.png) no-repeat left 3px center; }
+.BlacklistManage_tan .ul_01 .li_01 .tx{ width:41px; height:41px; display:block; position:absolute; z-index:10; left:38px; top:10px; display:block; border-radius:50%; }
+.BlacklistManage_tan .ul_01 .li_01 .tx img{ border-radius:50%; }
+
+/* 点击编辑符号 弹出 */
+.EditSymbol_box{ padding:12px 0px 3px 15px; display:block; border:1px solid #e0e0e0; }
+.EditSymbol_txt1{ width:100%; height:79px; text-align:left; display:block; line-height:20px; font-size:14px; color:#656565; }
+
+/* 点击添加符号 弹出 */
+
+/* 点击编辑分组 弹出 */
+.EditingGrouping_tan .div01{ padding-left:26px; padding-right:30px; }
+.EditingGrouping_tan .div01 .bt{ padding-left:29px; height:44px; line-height:44px; display:block; background:url(../images/CustomPhrasediv_dl_01_dt_01_addbtn.png) no-repeat left center; }
+.EditingGrouping_tan .div01 .overhide{ padding-left:4px; padding-bottom:30px; overflow-x:hidden; overflow-y:auto; display:block; max-height:250px; }
+.EditingGrouping_tan .div01 .ul_01{ width:100%; display:block; }
+.EditingGrouping_tan .div01 .ul_01 .li_01{ width:100%; height:30px; line-height:30px; color:#656565; font-size:14px; display:block; }
+.EditingGrouping_tan .div01 .EditingGroupbtn1{ float:left; margin-left:40px; padding-left:8px; display:block; font-size:14px; color:#656565; }
+
+/* 点击热键 弹出 */
+.Hotkey_M{ padding:0px 19px; display:block; }
+.Hotkey_tan .p1{ width:100%; line-height:37px; display:block; border-bottom:1px solid #ddd; font-size:14px; color:#282828; }
+.Hotkey_tan .ul_01{ width:100%; max-height:250px; padding-bottom:33px; display:block; overflow-x:hidden; overflow-y:auto; }
+.Hotkey_tan .ul_01 .li_01{ margin-left:3px; margin-right:20px; padding-left:8px; padding-right:120px; position:relative; z-index:10; height:36px; line-height:36px; font-size:14px; color:#656565; }
+.Hotkey_tan .ul_01 .li_01 .Key{ width:91px; padding-right:29px; text-align:right; height:100%; line-height:36px; position:absolute; z-index:10; right:0rem; top:0rem; }
+.Hotkey_tan .ul_01 .check{ color:#fff; background:#7f8393; }
+.Hotkey_tan .ul_01 .li_01 .Wu{ width:56px; height:32px; display:block; float:right; margin-top:2px; margin-right:2px; background:#fff; font-size:14px; color:#c2c2c2; text-align:center; }
+.Hotkey_tan .ul_01 .li_01No .Wu{ width:56px; height:32px; display:block; float:right; margin-top:2px; margin-right:2px; background:#fff; font-size:14px; color:#c2c2c2; text-align:center; }
+.Hotkey_tan .ul_01 .li_01No .Key{ padding-right:0px; }
