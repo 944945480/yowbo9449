@@ -124,6 +124,19 @@ $(function(){
 		_Groupingshow.toggle();
 	});
 	
+	//右边一级切换
+	var _ServiceSystemRNavulli=$(".ServiceSystem_R .NavgatMeun .Meunul .Meunli");
+	var _ServiceSystemRMaxulli=$(".ServiceSystem_R .Maxul .Maxli");
+	_ServiceSystemRMaxulli.eq(0).addClass("check");
+	_ServiceSystemRMaxulli.eq(0).show();
+	_ServiceSystemRNavulli.click(function(){
+		$(this).addClass("check");
+		$(this).siblings().removeClass("check");
+		var _thisnum=$(this).index();
+		_ServiceSystemRMaxulli.eq(_thisnum).show();
+		_ServiceSystemRMaxulli.eq(_thisnum).siblings().hide();		
+	});
+	
 	//居中弹出	
 	var G_WindowH=$(window).outerHeight(true);
 	var G_WindowW=$(window).outerWidth(true);
