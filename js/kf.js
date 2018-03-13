@@ -161,7 +161,9 @@ $(function(){
 	var _EditGroupingMeun=$(".EditGroupingMeun");
 	var _EditingGroupingtan=$(".EditingGrouping_tan"); //点击编辑分组
 	var _HotkeyMeun=$(".HotkeyMeun");
-	var _Hotkeytan=$(".Hotkey_tan");  //点击热键
+	var _Hotkeytan=$(".Hotkey_tan");  //点击热键	
+	var _AutomaticReplyMeun=$(".AutomaticReplyMeun");
+	var _AutomaticReplytan=$(".AutomaticReply_tan");  //点击自动回复
 	
 	_Conversationtan.hide();
 	_Transfertan.hide();
@@ -172,6 +174,7 @@ $(function(){
 	_AddSymboltan.hide();
 	_EditingGroupingtan.hide();
 	_Hotkeytan.hide();
+	_AutomaticReplytan.hide() //自动回复
 	
 	_AddChatMeun.click(function(){
 		_Conversationtan.show();
@@ -185,6 +188,7 @@ $(function(){
 		_AddSymboltan.hide();
 		_EditingGroupingtan.hide();
 		_Hotkeytan.hide();
+		_AutomaticReplytan.hide() //自动回复
 		_thisH=_aqszmid.outerHeight(true);	
 		var _banH=(G_WindowH-_thisH)/2;	
 		$(".aqszfd").css({"top":_banH}); 	
@@ -201,6 +205,7 @@ $(function(){
 		_AddSymboltan.hide();
 		_EditingGroupingtan.hide();
 		_Hotkeytan.hide();
+		_AutomaticReplytan.hide() //自动回复
 		_thisH=_aqszmid.outerHeight(true);	
 		var _banH=(G_WindowH-_thisH)/2;	
 		$(".aqszfd").css({"top":_banH}); 	
@@ -217,6 +222,7 @@ $(function(){
 		_AddSymboltan.hide();
 		_EditingGroupingtan.hide();
 		_Hotkeytan.hide();
+		_AutomaticReplytan.hide() //自动回复
 		_thisH=_aqszmid.outerHeight(true);	
 		var _banH=(G_WindowH-_thisH)/2;	
 		$(".aqszfd").css({"top":_banH}); 	
@@ -233,6 +239,7 @@ $(function(){
 		_AddSymboltan.hide();
 		_EditingGroupingtan.hide();
 		_Hotkeytan.hide();
+		_AutomaticReplytan.hide() //自动回复
 		_thisH=_aqszmid.outerHeight(true);	
 		var _banH=(G_WindowH-_thisH)/2;	
 		$(".aqszfd").css({"top":_banH}); 	
@@ -249,6 +256,7 @@ $(function(){
 		_AddSymboltan.hide();
 		_EditingGroupingtan.hide();
 		_Hotkeytan.hide();
+		_AutomaticReplytan.hide() //自动回复
 		_thisH=_aqszmid.outerHeight(true);	
 		var _banH=(G_WindowH-_thisH)/2;	
 		$(".aqszfd").css({"top":_banH}); 	
@@ -265,6 +273,7 @@ $(function(){
 		_AddSymboltan.hide();
 		_EditingGroupingtan.hide();
 		_Hotkeytan.hide();
+		_AutomaticReplytan.hide() //自动回复
 		_thisH=_aqszmid.outerHeight(true);	
 		var _banH=(G_WindowH-_thisH)/2;	
 		$(".aqszfd").css({"top":_banH}); 	
@@ -281,6 +290,7 @@ $(function(){
 		_EditSymboltan.hide();
 		_EditingGroupingtan.hide();
 		_Hotkeytan.hide();
+		_AutomaticReplytan.hide() //自动回复
 		_thisH=_aqszmid.outerHeight(true);	
 		var _banH=(G_WindowH-_thisH)/2;	
 		$(".aqszfd").css({"top":_banH}); 	
@@ -297,6 +307,7 @@ $(function(){
 		_EditSymboltan.hide();
 		_AddSymboltan.hide();
 		_Hotkeytan.hide();
+		_AutomaticReplytan.hide() //自动回复
 		_thisH=_aqszmid.outerHeight(true);	
 		var _banH=(G_WindowH-_thisH)/2;	
 		$(".aqszfd").css({"top":_banH}); 	
@@ -313,10 +324,29 @@ $(function(){
 		_EditSymboltan.hide();
 		_AddSymboltan.hide();
 		_EditingGroupingtan.hide();
+		_AutomaticReplytan.hide() //自动回复
 		_thisH=_aqszmid.outerHeight(true);	
 		var _banH=(G_WindowH-_thisH)/2;	
 		$(".aqszfd").css({"top":_banH}); 	
 	});
+	_AutomaticReplyMeun.click(function(){
+		_AutomaticReplytan.show() //自动回复		
+		_aqszyy.show();	
+		_aqszmid.show();
+		_Hotkeytan.hide();
+		_Conversationtan.hide();
+		_Transfertan.hide();
+		_Reporttan.hide();
+		_MoveBlacklisttan.hide();
+		_BlacklistManagetan.hide();
+		_EditSymboltan.hide();
+		_AddSymboltan.hide();
+		_EditingGroupingtan.hide();		
+		_thisH=_aqszmid.outerHeight(true);	
+		var _banH=(G_WindowH-_thisH)/2;	
+		$(".aqszfd").css({"top":_banH}); 	
+	});
+	
 	_aqszyy.click(function(){
 		_Conversationtan.hide();
 		_aqszyy.hide();	
@@ -329,6 +359,7 @@ $(function(){
 		_AddSymboltan.hide();
 		_EditingGroupingtan.hide();
 		_Hotkeytan.hide();	
+		_AutomaticReplytan.hide();  //自动回复
 	});
 	
 	
@@ -360,6 +391,22 @@ $(function(){
 		}		
 		
 	});		
+	//自动回复
+	//复选框3
+	var _idAutomaticReplyla2=$(".AutomaticReply_la2:has(:checkbox)");
+	_idAutomaticReplyla2.click(function(){
+	    var $chk=$(this).find("input:checkbox");
+		if($(this).hasClass("AutomaticReply_la2_check")){
+			$(this).removeClass("AutomaticReply_la2_check");
+			$chk.attr("checked",false);
+		} else {
+			$(this).addClass("AutomaticReply_la2_check");
+			$chk.attr("checked",true);
+		}		
+		
+	});	
+	
+	
 	
 	
 });

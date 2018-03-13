@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/bootstrap/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
 <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
-<!--<script type="text/javascript" src="js/bootstrap/npm.js"></script>-->
+<script type="text/javascript" src="js/bootstrap/npm.js"></script>
 <script type="text/javascript" src="js/CustomerServiceSystem.js"></script>
 <script type="text/javascript" src="js/kf.js"></script>
 </head>
@@ -311,7 +311,7 @@
                             <input type="button" class="bodybtn inputAll inputAll_3" />
                             <input type="button" class="bodybtn inputAll inputAll_4" />
                             <input type="button" class="bodybtn inputAllbtn1" value="快捷回复" />
-                            <input type="button" class="bodybtn inputAllbtn1" value="自动回复" />
+                            <input type="button" class="bodybtn inputAllbtn1 AutomaticReplyMeun" value="自动回复" />
                         </div>
                     </div>
                     <!-- end-->                    
@@ -991,6 +991,39 @@
 <div class="aqszyy"></div>
 <div class="aqszfd">
 	<div class="aqszmid">
+    	<!--自动回复 弹出-->
+        <div class="Tanbg AutomaticReply_tan">
+        	<h1>自动回复</h1>
+            <div class="div01">
+            	<p class=" blank13"></p>
+                <p><span class="AutomaticReply_la2 AutomaticReply_la2_check"><input name=" " type="checkbox" value=" " class="checkedclass" checked="checked">当天第一次收到买家消息时自动回复</span></p>
+                <div class="AutomaticReplyP AutomaticReplyPH1">
+                	<textarea cols="" rows="" class="bodytxt AutomaticReplytxt1">请在此输入自动回复的内容</textarea>
+                </div>
+                <p class="text_r p1">0/200</p>
+                <p class="clear blank5"></p>
+                <p><span class="AutomaticReply_la2 AutomaticReply_la2_check"><input name=" " type="checkbox" value=" " class="checkedclass" checked="checked">当我的状态为“忙碌”时自动回复</span></p>
+                <div class="AutomaticReplyP AutomaticReplyPH1">
+                	<textarea cols="" rows="" class="bodytxt AutomaticReplytxt1">请在此输入自动回复的内容</textarea>
+                </div>
+                <p class="text_r p1">0/200</p>
+                <p class="clear blank5"></p>
+                <p><span class="AutomaticReply_la2 AutomaticReply_la2_check"><input name=" " type="checkbox" value=" " class="checkedclass" checked="checked">当买家发送“好的”、“谢谢”时，自动回复<span><img src="images/AutomaticReply_bq.png" width="20" height="26" /></span></span></p>
+                <p class="clear blank27"></p>
+                <p><span class="AutomaticReply_la2 AutomaticReply_la2_check"><input name=" " type="checkbox" value=" " class="checkedclass" checked="checked">当用户等待过长时，自动回复</span></p>
+                <div class="AutomaticReplyP AutomaticReplyPH1">
+                	<textarea cols="" rows="" class="bodytxt AutomaticReplytxt1">请在此输入自动回复的内容</textarea>
+                </div>
+                <p class="text_r p1">0/200</p>
+                <p class="clear blank36"></p>
+                <p class="text-center">
+                    <input type="button" class="btn btn1" value="保存" />
+                    <input type="button" class="btn btn2" value="取消" />
+                </p>
+                <p class="clear blank39"></p>
+            </div>
+        </div>
+        <!--自动回复 弹出 end-->
     	<!--建立会话 弹出-->
         <div class="Tanbg Conversation_tan">
         	<h1>建立会话</h1>
@@ -1298,7 +1331,7 @@
 			</p>
 			<p class="blank23 clear"></p>
         </div>
-        <!--点击热键 弹出 end-->
+        <!--点击热键 弹出 end-->        
     	<div class="clear"></div>
     </div>
 </div>

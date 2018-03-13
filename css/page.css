@@ -585,3 +585,19 @@ h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px; }
 .Hotkey_tan .ul_01 .li_01 .Wu{ width:56px; height:32px; display:block; float:right; margin-top:2px; margin-right:2px; background:#fff; font-size:14px; color:#c2c2c2; text-align:center; }
 .Hotkey_tan .ul_01 .li_01No .Wu{ width:56px; height:32px; display:block; float:right; margin-top:2px; margin-right:2px; background:#fff; font-size:14px; color:#c2c2c2; text-align:center; }
 .Hotkey_tan .ul_01 .li_01No .Key{ padding-right:0px; }
+
+/* 点击自动回复 弹出*/
+.AutomaticReplytxt1{ width:100%; height:100%; display:block; line-height:20px; font-size:14px; color:#b8b8b8; }
+.AutomaticReply_tan .div01{ padding:0px 31px; display:block; }
+.AutomaticReply_la2{ padding-left:21px; height:26px; line-height:26px; line-height:26px; background:url(../images/AutomaticReply_la2.png) no-repeat left 1px center; font-size:14px; color:#464646; }
+.AutomaticReply_la2 .checkedclass { width:14px; height:14px; opacity:0; background:none;  cursor:pointer; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); position:absolute; left:1px; top:7px; z-index:1; }
+.AutomaticReply_la2_check{ background:url(../images/AutomaticReply_la2_check.png) no-repeat left 1px center; }
+.AutomaticReplyP{ padding-top:5px; padding-left:15px; width:540px; border:1px solid #dddddd; }
+.AutomaticReplyPH1{ height:47px; }
+.AutomaticReply_tan .p1{ padding-top:14px; line-height:15px; font-size:14px; color:#b8b8b8; } 
+
+
+
+
+
+
