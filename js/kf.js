@@ -14,6 +14,8 @@ $(function(){
 	var _ServiceSystemCEditorH=$(".ServiceSystem_C .Editor").outerHeight(true);
 	_ServiceSystemLoverH=_WinH-_ServiceSystemHeadH-_ServiceSystemLnavgatH-_ServiceSystemCEditorH;
 	_ServiceSystemCover.css({"height":_ServiceSystemLoverH,"overflow-y":"scroll"});
+	var _ServiceSystemCChatArea=$(".ServiceSystem_C .ChatArea");
+	_ServiceSystemCChatArea.css({"height":_ServiceSystemLoverH,"overflow-y":"scroll"});
 	
 	//今日接待与全部会话的切换
 	var _ServiceSystemLMeunulli=$(".ServiceSystem_L .Meunul .Meunli");
@@ -405,6 +407,51 @@ $(function(){
 		}		
 		
 	});	
+	
+	//发送的图片处理
+	var _CustomerService2spandiv=$(".ServiceSystem_C2 dl dd .spandiv");
+	var _Imgobj=$(".ServiceSystem_C2 dl dd .spandiv .maximg");
+	_Imgobj.each(function() { 
+			if(_Imgobj.length>0){
+				_Imgobj.parent().addClass("spandivpic");	
+				console.log(_CustomerService2spandiv.find(".maximg").width());
+		//		if(_CustomerService2spandiv.find(".maximg").width()>_CustomerService2spandiv.find(".maximg").height()){
+		//			$(this).parent().addClass("00");
+					_Imgobj.parent().css({"width":6.5+"rem"});	
+					_Imgobj.css({"width":100+"%"});
+		//		}
+			if(_CustomerService2spandiv.find(".img").height()>150){
+					
+					_Imgobj.parent(".spandivpic").css({"height":150+"px","width":"auto"});	
+					_Imgobj.css({"height":100+"%"});	
+				}				
+			}else{
+				_Imgobj.parent().removeClass("spandivpic");
+			};	
+	});
+	//点击放大图片
+	var _erviceSystemC2spandiv=$(".ServiceSystem_C2 .ChatArea dl dd .spandiv")
+	var _enlargemax=$(".enlargemax");
+	_enlargemax.hide();
+	_erviceSystemC2spandiv.click(function(){
+		var _thismaximg=$(this).find(".maximg");
+		var _thissrc=_thismaximg.attr('src');
+		console.log(_thissrc);
+		_aqszyy.show();
+		_enlargemax.show();
+		_enlargemax.find("img").attr('src',_thissrc);
+	//	_enlargemax.find("img").css("height":100+"%");
+		_enlargemax.click(function(){
+			enlargemaxhide();
+		});
+	});
+	function enlargemaxhide(){
+		_aqszyy.hide();
+		_enlargemax.hide();
+	};
+	_aqszyy.click(function(){
+		enlargemaxhide();	
+	});
 	
 	
 	
