@@ -607,7 +607,7 @@ h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px; }
 .ServiceSystem_C2 .ChatArea dl.te dd .spandiv .ico{ left: -10px;
     background: url(../images/ServiceSystem_C_ChatArea_dl_Left_dd_ico1.png) no-repeat left center;}
 .ServiceSystem_C2 .ChatArea dl.te dd .spandiv,.ServiceSystem_C2 .ChatArea dl.Left dd .spandiv{ max-width: 642px; margin-right: 0px; display: inline-block; }
-.ServiceSystem_C2 .ChatArea dl.rig dd .spandiv{ max-width: 585px; margin-left: 0px; display: inline-block; }
+.ServiceSystem_C2 .ChatArea dl.rig dd .spandiv{ max-width: 585px; margin-left: 0px; display: inline-block;  text-align: left; }
 .ServiceSystem_C2 .ChatArea dl.rig dd{ text-align: right; }
 .ServiceSystem_C2 .ChatArea dl dd .spandiv .Exclamatory{ cursor: pointer; width: 18px; height:100%; display: block; position: absolute; z-index: 2; top: 0px; background: url(../images/Report_tan_ReportMid_div01dl_dtbg.png) no-repeat right center;  }
 .ServiceSystem_C2 .ChatArea dl.te dd .spandiv .Exclamatory,.ServiceSystem_C2 .ChatArea dl.Left dd .spandiv .Exclamatory{ right:-30px; }
